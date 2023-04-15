@@ -2,7 +2,7 @@
 
 **如果喜欢这个项目，请给它一个Star；如果你发明了更好用的快捷键或函数插件，欢迎发issue或者pull requests**
 
-If you like this project, please give it a Star. If you've come up with more useful academic shortcuts or functional plugins, feel free to open an issue or pull request.
+If you like this project, please give it a Star. If you've come up with more useful academic shortcuts or functional plugins, feel free to open an issue or pull request. We also have a [README in English](img/README_EN.md) translated by this project itself.
 
 > **Note**
 >
@@ -10,8 +10,6 @@ If you like this project, please give it a Star. If you've come up with more use
 >
 > 2.本项目中每个文件的功能都在自译解[`self_analysis.md`](https://github.com/binary-husky/chatgpt_academic/wiki/chatgpt-academic%E9%A1%B9%E7%9B%AE%E8%87%AA%E8%AF%91%E8%A7%A3%E6%8A%A5%E5%91%8A)详细说明。随着版本的迭代，您也可以随时自行点击相关函数插件，调用GPT重新生成项目的自我解析报告。常见问题汇总在[`wiki`](https://github.com/binary-husky/chatgpt_academic/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)当中。
 > 
-> 3.如果您不太习惯部分中文命名的函数、注释或者界面，您可以随时点击相关函数插件，调用ChatGPT一键生成纯英文的项目源代码。另见由本项目Markdown翻译插件一键生成的[README in English](img/README_EN.md). 
->
 
 
 <div align="center">
@@ -43,28 +41,20 @@ huggingface免科学上网[在线体验](https://huggingface.co/spaces/qingxu98/
 
 </div>
 
-<!-- - 新界面（左：master主分支, 右：dev开发前沿） -->
 - 新界面（修改config.py中的LAYOUT选项即可实现“左右布局”和“上下布局”的切换）
 <div align="center">
 <img src="https://user-images.githubusercontent.com/96192199/230361456-61078362-a966-4eb5-b49e-3c62ef18b860.gif" width="700" >
 </div>
 
 
-
 - 所有按钮都通过读取functional.py动态生成，可随意加自定义功能，解放粘贴板
 <div align="center">
-<img src="img/公式.gif" width="700" >
+<img src="https://user-images.githubusercontent.com/96192199/231975334-b4788e91-4887-412f-8b43-2b9c5f41d248.gif" width="700" >
 </div>
 
 - 润色/纠错
 <div align="center">
-<img src="img/润色.gif" width="700" >
-</div>
-
-
-- 支持GPT输出的markdown表格
-<div align="center">
-<img src="img/demo2.jpg" width="500" >
+<img src="https://user-images.githubusercontent.com/96192199/231980294-f374bdcb-3309-4560-b424-38ef39f04ebd.gif" width="700" >
 </div>
 
 - 如果输出包含公式，会同时以tex形式和渲染形式显示，方便复制和阅读
@@ -72,15 +62,12 @@ huggingface免科学上网[在线体验](https://huggingface.co/spaces/qingxu98/
 <img src="https://user-images.githubusercontent.com/96192199/230598842-1d7fcddd-815d-40ee-af60-baf488a199df.png" width="700" >
 </div>
 
-
-
 - 懒得看项目代码？整个工程直接给chatgpt炫嘴里
 <div align="center">
 <img src="https://user-images.githubusercontent.com/96192199/226935232-6b6a73ce-8900-4aee-93f9-733c7e6fef53.png" width="700" >
 </div>
 
 - 多种大语言模型混合调用（[v3.0分支](https://github.com/binary-husky/chatgpt_academic/tree/v3.0)测试中）
-
 <div align="center">
 <img src="https://user-images.githubusercontent.com/96192199/231222778-34776885-a7f0-4f2c-b5f4-7cc2ef3ecb58.png" width="700" >
 </div>
@@ -176,7 +163,7 @@ input区域 输入 ./crazy_functions/test_project/python/dqn ， 然后点击 "[
 请访问[部署wiki-1](https://github.com/binary-husky/chatgpt_academic/wiki/%E4%BD%BF%E7%94%A8WSL2%EF%BC%88Windows-Subsystem-for-Linux-%E5%AD%90%E7%B3%BB%E7%BB%9F%EF%BC%89%E9%83%A8%E7%BD%B2)
 
 ## 自定义新的便捷按钮（学术快捷键自定义）
-打开functional.py，添加条目如下，然后重启程序即可。（如果按钮已经添加成功并可见，那么前缀、后缀都支持热修改，无需重启程序即可生效。）
+任意文本编辑器打开`core_functional.py`，添加条目如下，然后重启程序即可。（如果按钮已经添加成功并可见，那么前缀、后缀都支持热修改，无需重启程序即可生效。）
 例如
 ```
 "超级英译中": {
@@ -194,7 +181,7 @@ input区域 输入 ./crazy_functions/test_project/python/dqn ， 然后点击 "[
 </div>
 
 
-如果你发明了更好用的学术快捷键，欢迎发issue或者pull requests！
+如果你发明了更好用的快捷键，欢迎发issue或者pull requests！
 
 ## 配置代理
 ### 方法一：常规方法
@@ -212,7 +199,7 @@ python check_proxy.py
 ### 方法二：纯新手教程
 [纯新手教程](https://github.com/binary-husky/chatgpt_academic/wiki/%E4%BB%A3%E7%90%86%E8%BD%AF%E4%BB%B6%E9%97%AE%E9%A2%98%E7%9A%84%E6%96%B0%E6%89%8B%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%88%E6%96%B9%E6%B3%95%E5%8F%AA%E9%80%82%E7%94%A8%E4%BA%8E%E6%96%B0%E6%89%8B%EF%BC%89)
 
-## 兼容性测试
+## 功能测试
 
 ### 图片显示：
 
